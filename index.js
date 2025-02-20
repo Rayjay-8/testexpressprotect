@@ -76,7 +76,7 @@ app.get("/", (req, res) => {
 
 // Inicia o servidor HTTPS
 
-app.server(80, () => {
+app.listen(80, () => {
   console.log("🔒 Servidor HTTPS rodando em https://localhost:80");
 })
 // https.createServer(options, app).listen(80, () => {
