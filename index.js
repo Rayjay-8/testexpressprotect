@@ -75,6 +75,6 @@ app.get("/", (req, res) => {
 });
 
 // Inicia o servidor HTTPS
-https.createServer(options, app).listen(3000, () => {
-  console.log("🔒 Servidor HTTPS rodando em https://localhost:3000");
+https.createServer(options, app).listen(80, () => {
+  console.log("🔒 Servidor HTTPS rodando em https://localhost:80");
 });
